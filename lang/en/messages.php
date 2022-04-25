@@ -20,7 +20,7 @@ return [
         'contact' => 'Contact',
         'way-from-metro' => '5 minutes from metro station „MUZEUM“',
         'contact-us' => 'Contact us',
-        'copyright' => 'Massage and erotic massage Prague',
+        'copyright' => 'Copyright © 2017-2021 Massage and erotic massage Prague',
     ],
 
     'sidebar' => [
@@ -48,11 +48,11 @@ return [
     /** Home page */
     'home' => [
         'title' => 'Erotic massage Prague',
-        'description' => 'We will satisfy all your erotic desires...<br><br>...and astonish you with the exceptional feelings that you have never experienced before.
+        'description' => '<b>We will satisfy all your erotic desires...</b><br><br>...and astonish you with the exceptional feelings that you have never experienced before.
                           We will <b>spill your body by life-giving energy, remove all the tension from you and fill your life by a new zest.</b><br><br>
                           You will completely forget all the worries of everyday life with us. We will break your sexual taboos and <b>give you the endless pleasure and excitement.</b>
                           Our erotic massages will <b>evoke the sexual fire</b> inside you, with the tantric massages you will <b>experience a climax in every part of your body</b>
-                          and during the royal massage you will completely <b>forget to perceive the time.</b>
+                          and during the royal massage you will completely <b>forget to perceive the time.</b><br><br>
                           We are ready to convince you that the most beautiful erotic feelings you can experience even without having sexual intercourse. Just visit our erotic salon in Prague and you will see.',
         'link-text' => 'Get unfogettable massage!',
         'meta-title' => 'Erotic Massage Prague | Larosa.cz',
@@ -76,6 +76,7 @@ return [
         'nuru-massage-2' => 'Nuru massage 2 ladys( 4 hands)',
         'happy-ending-moments' => 'Happy ending moments',
         'min' => 'min',
+        'and' => 'and',
         '4-hands' => '4 hands including Lesbi Show and Champagne',
         'including-taxi' => 'including taxi',
         'price-including' => 'Price including transfer of masseur/masseuse to agree place in Prague´s area',
@@ -95,6 +96,7 @@ return [
 
     'contact' => [
         'title' => 'Contact Us',
+        'contact' => 'Contact',
         'in-prague' => 'We are in center of Prague',
         'meta-title' => 'Erotic Massage Prague | Contact us',
         'meta-keywords' => 'Contact us +420 608 900 316.',
@@ -106,7 +108,10 @@ return [
         'title' => 'Erotic massage Prague for you',
         'description' => '<b>We\'ll get you to the very top of getting your satisfaction feeling</b><br><br>
                           With the magic music and pleasant exciting touches will <b>release your nervous system and put in your state unusual euphoria.</b>
-                          During the massage you will live every touch, stroke or strain more intensively than you have ever imagined.',
+                          During the massage you will live every touch, stroke or strain more intensively than you have ever imagined.<br><br>
+                          Erotic massage is <b>an excellent way to combat stress and mental health problems.</b> During it you <b>will completely forget all your worries</b>
+                          and you will indulge only exceptional feelings that lead up to your sexual climax. And not just any climax - <b>intense orgasm feel all your body.</b><br><br>
+                          Erotic massage will clear your spirit and body. So come and persuade youself . Our sensual masseurs (masseuses) are waiting for you.',
         'link-text' => 'Get erotic massage!',
         'meta-title' => 'Erotic Massage Prague - Czech Massage',
         'meta-keywords' => 'erotic massage Prague, czech girls',
@@ -313,5 +318,17 @@ return [
         'meta-title' => 'Erotic Massage Prague | Gay Massage Prague',
         'meta-keywords' => 'Erotic massages for gays',
         'meta-description' => 'Try our massages for gays in Prague. Massage for gays we encourage anyone who wants to get out of a rut and enrich their erotic life.',
+    ],
+
+    'age_check' => [
+        'header' => 'Erotic Massage Prague',
+        'availability' => 'We are will be availabe in New Year and Christmas for you',
+        'agreement' => 'If you agree with all the above three points, you can continue browsing site.',
+        'precondition-1' => 'I am 18 years old or more.',
+        'precondition-2' => 'I agree that I will not show the content of this website or disseminate any person under 18 years of age.',
+        'precondition-3' => 'Erotic content offended me and I enter these sites entirely voluntary.',
+        'look-forward' => 'We look forward to you!',
+        'button-yes' => 'Yes , I am 18 and more',
+        'button-no' => 'No, I\'m less'
     ],
 ];

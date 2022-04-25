@@ -1,9 +1,9 @@
-<div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+<div class="language-switcher">
+    <span class="lang-title">{{ __('messages.header.language') }}:</span>
     @foreach($availableLocales as $localeName => $availableLocale)
         @php
             $langCode = ($availableLocale === 'en') ? 'us' : $availableLocale;
         @endphp
-
 
         @if($availableLocale === $currentLocale)
             <span class="flag-icon flag-icon-{{ $langCode }}"></span>

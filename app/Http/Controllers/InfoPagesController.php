@@ -8,13 +8,20 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
 /**
- * Controller for descriptive pages(sidebar menu)
+ * Controller for descriptive pages(sidebar menu) and Home page
  */
 class InfoPagesController extends Controller
 {
     public function home()
     {
-        return view('layouts.home');
+        return view('pages.home', [
+            'title' => __('messages.home.title'),
+            'description' => __('messages.home.description'),
+            'link' => __('messages.home.link-text'),
+            'metaTitle' => __('messages.home.meta-title'),
+            'metaKeywords' => __('messages.home.meta-keywords'),
+            'metaDescription' => __('messages.home.meta-description'),
+        ]);
     }
 
     /**
@@ -22,7 +29,7 @@ class InfoPagesController extends Controller
      */
     public function eroticMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.erotic_massage.title'),
             'description' => __('messages.erotic_massage.description'),
             'link' => __('messages.erotic_massage.link-text'),
@@ -37,7 +44,7 @@ class InfoPagesController extends Controller
      */
     public function tantricMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.tantric_massage.title'),
             'description' => __('messages.tantric_massage.description'),
             'link' => __('messages.tantric_massage.link-text'),
@@ -52,7 +59,7 @@ class InfoPagesController extends Controller
      */
     public function relaxatingMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.relaxating_massage.title'),
             'description' => __('messages.relaxating_massage.description'),
             'link' => __('messages.relaxating_massage.link-text'),
@@ -67,7 +74,7 @@ class InfoPagesController extends Controller
      */
     public function hawaiianMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.hawaiian_massage.title'),
             'description' => __('messages.hawaiian_massage.description'),
             'link' => __('messages.hawaiian_massage.link-text'),
@@ -82,7 +89,7 @@ class InfoPagesController extends Controller
      */
     public function royalMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.royal_massage.title'),
             'description' => __('messages.royal_massage.description'),
             'link' => __('messages.royal_massage.link-text'),
@@ -97,7 +104,7 @@ class InfoPagesController extends Controller
      */
     public function nuruMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.nuru_massage.title'),
             'description' => __('messages.nuru_massage.description'),
             'link' => __('messages.nuru_massage.link-text'),
@@ -112,7 +119,7 @@ class InfoPagesController extends Controller
      */
     public function escortService()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.escort_service.title'),
             'description' => __('messages.escort_service.description'),
             'link' => __('messages.escort_service.link-text'),
@@ -127,7 +134,7 @@ class InfoPagesController extends Controller
      */
     public function hotelService()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.hotel_service.title'),
             'description' => __('messages.hotel_service.description'),
             'link' => __('messages.hotel_service.link-text'),
@@ -142,7 +149,7 @@ class InfoPagesController extends Controller
      */
     public function secretWish()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.secret_wish.title'),
             'description' => __('messages.secret_wish.description'),
             'link' => __('messages.secret_wish.link-text'),
@@ -157,7 +164,7 @@ class InfoPagesController extends Controller
      */
     public function swingersMassage()
     {
-        return view('layouts.description_page', [
+        return view('pages.description_page', [
             'title' => __('messages.swingers_massage.title'),
             'description' => __('messages.swingers_massage.description'),
             'link' => __('messages.swingers_massage.link-text'),

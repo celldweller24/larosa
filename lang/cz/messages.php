@@ -20,7 +20,7 @@ return [
         'contact' => 'KONTAKT',
         'way-from-metro' => '5 minut od zastávky metra “MUZEUM“',
         'contact-us' => 'Zavolejte nám',
-        'copyright' => 'Masáže a erotické masáže Praha',
+        'copyright' => 'Copyright © 2017-2021 Masáže a erotické masáže Praha',
     ],
 
     'sidebar' => [
@@ -42,7 +42,7 @@ return [
             'swingers-massage' => 'Swingers Masáže',
         ],
 
-        'masseuses' => '<span class="highlighted-yellow">Naši</span> maséři',
+        'masseuses' => 'Naši maséři',
     ],
 
     /** Home page */
@@ -53,8 +53,8 @@ return [
                           A přivedeme vás do výjimečných stavů, které jste ještě nikdy dříve nezažili.
                           Po celém vašem těle <b>rozlijeme životadárnou energii, shodíme z vás veškeré napětí a naplníme váš život novým životním elánem.</b><br><br>
                           S námi zapomenete na starosti všedních dní. Zboříte veškerá sexuální tabu a <b>oddáte se nekonečné slasti a vzrušení.</b>
-                          Naše <a href="/eroticka-masaz">erotické masáže</a> ve vás <b>probudí sexuální oheň</b>,
-                          s <a href="/tantra-masaz">tantrickými masážemi</a> <b>prožijete vyvrcholení v každé části svého těla</b> a během <a href="/kralovska-masaz">královské masáže úplně <b>zapomenete vnímat čas.</b><br><br>
+                          Naše <a href="/erotic-massage">erotické masáže</a> ve vás <b>probudí sexuální oheň</b>,
+                          s <a href="/tantric-massage">tantrickými masážemi</a> <b>prožijete vyvrcholení v každé části svého těla</b> a během <a href="/royal-massage">královské masáže úplně <b>zapomenete vnímat čas.</b><br><br>
                           Přesvědčíme vás o tom, že ty nejkrásnější erotické pocity můžete zažívat i bez pohlavního styku. Stačí jenom navštívit náš erotický salón v Praze.',
         'link-text' => 'Get unfogettable massage!',
         'meta-title' => 'Erotické masáže Praha',
@@ -77,6 +77,7 @@ return [
         'escort-service' => 'Escort servis / Masáže do domu (včetně taxi)',
         'happy-ending-moments' => 'Masáž s vyvrcholením na konci',
         'min' => 'min',
+        'and' => 'a',
         'including-taxi' => 'včetně taxi',
         'price-including' => 'Cena je včetně dopravy maséra/ky na předem domluvené místo v rámci Praha',
         'meta-title' => 'Náš ceník | Larosa.cz',
@@ -95,6 +96,8 @@ return [
 
     'contact' => [
         'title' => 'Zavolejte nám',
+        'contact' => 'Kontakt',
+        'way-from-metro' => '5 minut od zastávky metra „MUZEUM“',
         'in-prague' => 'Jsme v cetnru Prahy',
         'meta-title' => 'Kontaktujte nás | Larosa.cz',
         'meta-keywords' => 'Kontaktujte nás',
