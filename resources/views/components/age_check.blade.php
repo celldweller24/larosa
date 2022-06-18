@@ -13,9 +13,6 @@
         <p>{{ __('messages.age_check.agreement') }}</p>
         <p>{{ __('messages.age_check.look-forward') }}</p>
 
-        {{--<a id="yes" href="#todo" class="btn btn-primary">{{ __('messages.age_check.button-yes') }}</a>
-        <a id="no" href="#todo" class="btn">{{ __('messages.age_check.button-no') }}</a>--}}
-
         <button type="button" class="btn btn-warning check-yes">{{ __('messages.age_check.button-yes') }}</button>
         <button type="button" class="btn btn-secondary check-no">{{ __('messages.age_check.button-no') }}</button>
 

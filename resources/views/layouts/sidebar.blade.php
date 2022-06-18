@@ -92,10 +92,23 @@
             <h2>
                 <a href="/photogallery">{{ __('messages.sidebar.masseuses') }}</a>
             </h2>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
 
+            @if (isset($categoryEmployees))
+                <ul class="masseuses">
+                    @foreach ($categoryEmployees as $key => $categoryEmployee)
+                        <li class="row {{ ($key === 0) ? 'active' : '' }}">
+                            <a href="#" class="col-10" data-id="{{ $categoryEmployee->id }}" onclick="return false;">
+                                {{ $categoryEmployee->name }}
+                            </a>
+                            @if ($categoryEmployee->gender === 'F')
+                                <span class="icon-female col-2"></span>
+                            @else
+                                <span class="icon-male col-2"></span>
+                            @endif
+                        </li>
+                    @endforeach
+                </ul>
+            @endif
+        </div>
     </div>
 </aside>

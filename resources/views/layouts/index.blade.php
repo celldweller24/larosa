@@ -54,4 +54,5 @@
     <div class="overlay"></div>
     @include('components.age_check')
 </body>
+
 </html>

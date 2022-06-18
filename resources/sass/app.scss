@@ -10,6 +10,9 @@
 // Flag Icon CSS
 @import '~flag-icon-css/sass/flag-icons';
 
+// Fancybox
+@import '@fancyapps/ui/dist/fancybox.css';
+
 body {
     font-family: $font-family-sans-serif;
     line-height: 1;
@@ -156,6 +159,67 @@ h1 {
                     &:hover {
                         color: $color-light-green;
                         border-bottom: 1px solid #fff;
+                    }
+                }
+
+                ul {
+
+                    li {
+
+                        a {
+                            color: $color-white;
+                            font-size: 20px;
+                            text-decoration: none;
+                            font-weight: 600;
+
+                            &:hover {
+                                font-weight: 800;
+                                text-decoration: underline;
+                            }
+                        }
+
+                        span {
+                            width: 35px;
+                            height: 35px;
+
+                            &.icon-female {
+                                background:  url('~/storage/images/ico-women.png') no-repeat 0px -4px;
+                            }
+
+                            &.icon-male {
+                                background:  url('~/storage/images/ico-men.png') no-repeat 0px -4px;
+                            }
+
+                            &:hover {
+
+                                &.icon-female {
+                                    background:  url('~/storage/images/ico-women.png') no-repeat 0px -51px;
+                                }
+
+                                &.icon-male {
+                                    background:  url('~/storage/images/ico-men.png') no-repeat 0px -51px;
+                                }
+                            }
+                        }
+
+                        &.active {
+
+                            a {
+                                font-weight: 800;
+                                text-decoration: underline;
+                            }
+
+                            span {
+
+                                &.icon-female {
+                                    background:  url('~/storage/images/ico-women.png') no-repeat 0px -51px;
+                                }
+
+                                &.icon-male {
+                                    background:  url('~/storage/images/ico-men.png') no-repeat 0px -51px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -349,14 +413,17 @@ h1 {
             }
         }
 
-        .page-text, .pricing, .contact-page {
+        .page-text, .pricing, .photo-gallery, .contact-page {
             background-color: #fff;
             font-size: 16px;
             line-height: 24px;
             font-weight: 500;
             padding: 10px 25px 30px 25px;
-            margin-left: 10px;
             min-height: 480px;
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 10px;
+            }
         }
 
         .page-text {
@@ -382,6 +449,36 @@ h1 {
             }
         }
 
+        .photo-wrapper {
+            display: none;
+            overflow: hidden;
+            background-color: #fff;
+            margin-left: 10px;
+            margin-right: 0;
+            padding: 0 10px;
+
+            .photo-item {
+                float: left;
+                margin: 0 10px 20px 0;
+                //border: 8px solid #fff;
+            }
+
+            .main-photo {
+
+                img {
+                    height: 530px;
+                }
+            }
+
+            img {
+                height: 255px;
+            }
+
+            &.active {
+                display: block;
+            }
+        }
+
         .pricing {
 
             table {
@@ -394,6 +491,31 @@ h1 {
 
                     th {
                         min-width: 260px;
+                    }
+                }
+            }
+        }
+
+        .photo-gallery {
+
+            h2 {
+                font-size: 27px;
+                font-weight: 700;
+                line-height: 28px;
+                color: $color-font-green;
+            }
+
+            .img-list {
+
+                a {
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $color-light-font-green;
                     }
                 }
             }
@@ -487,6 +609,60 @@ h1 {
             margin: 15px 0 15px 50px;
             font-size: 16px;
             font-weight: 500;
+        }
+    }
+}
+
+/** Admin Panes styles **/
+
+.admin-panel {
+
+    .employee-list-heading {
+        margin-top: 20px;
+
+        li {
+            border-bottom: none;
+        }
+    }
+
+    .add-masseuse {
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .card-body {
+
+        .existed-photos {
+
+            &-wrapper {
+                position: relative;
+                float: left;
+                margin-right: 20px;
+
+                i {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    font-size: 20px;
+                    color: #c22424;
+                    background-color: #a5a5a5;
+                    width: 20px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                img {
+                    min-width: auto;
+                    max-height: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .employee-submit {
+            float: right;
         }
     }
 }
@@ -872,9 +1048,9 @@ h1 {
         .content {
             margin-left: 15px;
 
-            .page-text, .pricing, .contact-page {
+            /*.page-text, .pricing, .contact-page, .photo-gallery {
                 margin-left: 0;
-            }
+            }*/
 
             .contact-content {
 
@@ -882,6 +1058,11 @@ h1 {
                     margin-bottom: 25px;
                 }
             }
+
+            .photo-wrapper {
+                margin-left: 0;
+            }
+
         }
 
         footer {
@@ -907,6 +1088,17 @@ h1 {
 }
 
 @include media-breakpoint-up(xxl) {
+
+    .left {
+
+        aside {
+
+            .sidebar {
+                width: 330px;
+                float: right;
+            }
+        }
+    }
 
     .right {
 

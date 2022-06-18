@@ -6,6 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Route;
 
 class Localization
 {
@@ -22,14 +23,15 @@ class Localization
             App::setLocale(Session::get('locale'));
         }
 
+
+        $segments = $request->segments();
+
         $langCodeSegment = $request->segment(1);
 
         if (!in_array($langCodeSegment, config('app.available_locales'), true)) {
-            $segments = $request->segments();
+
             $fallback = session('locale') ?: config('app.fallback_locale');
             $segments = array_merge((array) $fallback, $segments);
-
-            var_dump(Session::get('locale'));
 
             return redirect()->to(implode('/', $segments));
         } else {
@@ -45,8 +47,10 @@ class Localization
         ) {
             App::setLocale($request->segment(3));
             Session::put('locale', $request->segment(3));
+
             return redirect()->to($request->segment(3));
         }
+
 
         return $next($request);
     }
