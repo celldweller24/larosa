@@ -5,8 +5,10 @@ use App\Http\Controllers\InfoPagesController;
 use App\Http\Controllers\TypePagesController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\GeneralPagesController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +21,6 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('language/{locale}', [AppController::class, 'language']);
-
-Auth::routes();
-
-//Route::resource('employee', EmployeeController::class);
-
 Route::group(['prefix' => 'employee'], function () {
     Route::controller(EmployeeController::class)->group(function () {
         Route::get('edit', 'edit')->name('employeeEdit');
@@ -32,6 +28,7 @@ Route::group(['prefix' => 'employee'], function () {
         Route::get('add', 'create')->name('employeeAdd');
         Route::post('create', 'store')->name('employeeCreate');
         Route::get('delete/{id}', 'destroy')->name('employeeDelete');
+        Route::get('delete-photo', 'deletePhoto')->name('deletePhoto');
     });
 });
 
@@ -41,7 +38,6 @@ Route::controller(AdminController::class)->group(function () {
     Route::get('admin', 'index')->name('dashboard');
 
     Route::get('admin/employee-sort', 'employeeSort')->name('employeeSort');
-    Route::post('admin/photo-sort', 'photoSort')->name('photoSort');
 });
 
 /* Page routes */
@@ -94,6 +90,7 @@ Route::controller(AdminController::class)->group(function () {
 
 /*****************/
 
+/* Page routes */
 $optionalLanguageRoutes = function() {
 
     Route::controller(InfoPagesController::class)->group(function () {
@@ -117,16 +114,13 @@ $optionalLanguageRoutes = function() {
         Route::get('for-gays', 'forGays');
     });
 
-    Route::get('pricing', function () {
-        return view('pages.pricing');
-    });
-
-    Route::get('photogallery', function () {
-        return view('pages.photogallery');
-    });
-
-    Route::get('contact', function () {
-        return view('pages.contact');
+    Route::controller(GeneralPagesController::class)->group(function () {
+        Route::get('pricing', 'pricing');
+        Route::get('photogallery', 'photoGallery');
+        Route::get('contact', 'contact');
+        Route::get('contact', function () {
+            return view('pages.contact');
+        });
     });
 
     // Language switcher
@@ -136,12 +130,10 @@ $optionalLanguageRoutes = function() {
     Auth::routes();
 
     // Admin panel
-    Route::resource('dashboard', EmployeeController::class);
+    //Route::resource('dashboard', EmployeeController::class);
 };
 
-
+Route::group(['middleware' => 'local'], $optionalLanguageRoutes);
 Route::group(['middleware' => 'local', 'prefix' => '{lang?}'], $optionalLanguageRoutes);
 
-//Route::middleware(['local'])->group($optionalLanguageRoutes());
 
-//Route::group(['middleware' => 'local'], $optionalLanguageRoutes);

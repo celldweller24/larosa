@@ -13186,6 +13186,13 @@ h1, .h1 {
   color: #2ed3cb;
 }
 
+/*html[lang="ru"] {
+
+    body {
+        font-family: $font-family-ru-sans-serif;
+        font-size: $font-size-base;
+    }
+}*/
 .left {
   background: #007b75 url(/images/left_bg.jpg?7bb28693aa677ded1d12114c91b76a59) no-repeat right top;
 }
@@ -13271,6 +13278,7 @@ h1, .h1 {
   margin-bottom: 10px;
 }
 .left aside .sidebar .contact-us span.additional-info {
+  white-space: nowrap;
   font-size: 18px;
   font-weight: 700;
   font-style: italic;
@@ -13522,6 +13530,13 @@ h1, .h1 {
 .right .content .photo-wrapper .main-photo img {
   height: 530px;
 }
+.right .content .photo-wrapper h2, .right .content .photo-wrapper .h2 {
+  font-size: 39px;
+  font-weight: 800;
+  color: #fbbb37;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 .right .content .photo-wrapper img {
   height: 255px;
 }
@@ -13533,6 +13548,12 @@ h1, .h1 {
 }
 .right .content .pricing table tr th {
   min-width: 260px;
+}
+.right .content .gallery-view-block.desktop {
+  display: block;
+}
+.right .content .gallery-view-block.mobile {
+  display: none;
 }
 .right .content .photo-gallery h2, .right .content .photo-gallery .h2 {
   font-size: 27px;
@@ -13620,10 +13641,14 @@ h1, .h1 {
 .admin-panel .add-masseuse a {
   color: #fff;
 }
+.admin-panel .card-body .existed-photos {
+  overflow: hidden;
+}
 .admin-panel .card-body .existed-photos-wrapper {
   position: relative;
   float: left;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 .admin-panel .card-body .existed-photos-wrapper i {
   position: absolute;
@@ -13639,7 +13664,12 @@ h1, .h1 {
 .admin-panel .card-body .existed-photos-wrapper img {
   min-width: auto;
   max-height: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
+}
+.admin-panel .card-body .existed-photos-wrapper input.photo-sorting {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
 }
 .admin-panel .card-body .employee-submit {
   float: right;
@@ -13830,6 +13860,25 @@ h1, .h1 {
   .right .content .pricing table tr th {
     min-width: 0;
   }
+  .right .content .gallery-view-block.desktop {
+    display: none;
+  }
+  .right .content .gallery-view-block.mobile {
+    display: block;
+    background-color: black;
+  }
+  .right .content .gallery-view-block.mobile h2, .right .content .gallery-view-block.mobile .h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #fbbb37;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .right .content .gallery-view-block .massause-item img {
+    max-height: 300px;
+    margin: 0 auto;
+  }
   .right footer .contact-box .contact-us {
     display: none;
   }
@@ -13848,6 +13897,17 @@ h1, .h1 {
   .right footer .contact-box .contact-us {
     font-size: 35px;
     text-align: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .right .content .gallery-view-block h2, .right .content .gallery-view-block .h2 {
+    font-size: 30px;
+  }
+  .right .content .gallery-view-block .photo-item img {
+    height: 225px;
+  }
+  .right .content .gallery-view-block .photo-item .main-photo img {
+    height: 500px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -13886,9 +13946,6 @@ h1, .h1 {
   }
   .right .content {
     margin-left: 15px;
-    /*.page-text, .pricing, .contact-page, .photo-gallery {
-        margin-left: 0;
-    }*/
   }
   .right .content .contact-content .map {
     margin-bottom: 25px;

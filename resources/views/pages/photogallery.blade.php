@@ -31,4 +31,6 @@
             </div>
         </div>
     </div>
+
+    @include('components/gallery_view_block')
 @endsection

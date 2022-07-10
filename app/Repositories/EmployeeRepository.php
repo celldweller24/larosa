@@ -18,8 +18,22 @@ class EmployeeRepository
         $employees = DB::table('employees')
                         ->join('category_employees', 'employees.id', '=', 'category_employees.employee_id')
                         ->where('category_employees.category_id', '=', $categoryId)
+                        ->where('employees.active', '=', '1')
                         ->select('employees.*')
                         ->orderBy('employees.sort', self::SORTING);
+
+        return $employees->get()->toArray();
+    }
+
+    /**
+     * @return array
+     */
+    public function getAllEmployeesWIthPhoto(): array
+    {
+        $employees = DB::table('employees')
+            ->where('employees.active', '=', '1')
+            ->select('employees.*')
+            ->orderBy('employees.sort', self::SORTING);
 
         return $employees->get()->toArray();
     }
@@ -33,9 +47,15 @@ class EmployeeRepository
         $photos = [];
         foreach ($employees as $key => $employee) {
 
-            $collectedData = Employee::with(['photos'])->findOrFail($employee->id);
+            $employee = (object) $employee;
+
+            $collectedData = Employee::with(['photos' => function($query) {
+                return $query->orderBy('sort', 'asc');
+            }])->findOrFail($employee->id);
+
             $photos[$key]['items'] = $collectedData->photos;
             $photos[$key]['employee_id'] = $employee->id;
+            $photos[$key]['employee_name'] = $employee->name;
         }
 
         return $photos;

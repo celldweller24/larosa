@@ -11,7 +11,7 @@ class Employee extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["name", "sort", "gender", "created_at", "updated_at"];
+    protected $fillable = ["name", "sort", "gender", "active", "created_at", "updated_at"];
 
     public function photos() {
         return $this->hasMany(EmployeePhoto::class);

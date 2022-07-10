@@ -98,6 +98,7 @@ return [
         'title' => 'Contact Us',
         'contact' => 'Contact',
         'in-prague' => 'We are in center of Prague',
+        'way-from-metro' => '5 minutes from metro station „MUZEUM“',
         'meta-title' => 'Erotic Massage Prague | Contact us',
         'meta-keywords' => 'Contact us +420 608 900 316.',
         'meta-description' => 'Contact erotic massage in Prague Larosa.cz',

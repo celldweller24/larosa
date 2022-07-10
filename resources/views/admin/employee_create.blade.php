@@ -14,6 +14,20 @@
                                 <input type="text" class="form-control" id="employeeName" name="employeeName" aria-describedby="nameHelp">
                                 <div id="nameHelp" class="form-text">Masseuse name</div>
                             </div>
+
+                            <div class="mb-3 activity-checkbox">
+                                <p>Visibility</p>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="1"
+                                        name="activityCheckbox"
+                                    >
+                                    <label class="form-check-label" for="flexCheckDefault">Active</label>
+                                </div>
+                            </div>
+
                             <div class="mb-3 category-checkbox">
                                 <p>Category</p>
                                 @foreach ($categories as $category)
@@ -35,11 +49,12 @@
                                 <label for="formFileMultiple" class="form-label">Select photos</label>
                                 <input class="form-control" type="file" name="photos[]" id="formFileMultiple" multiple>
                             </div>
-   
+
                             <button type="submit" class="btn btn-primary">Save</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 @endsection

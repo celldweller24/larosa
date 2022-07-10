@@ -50,12 +50,12 @@ class EmployeeController extends Controller
     {
         $employee = new Employee();
 
-        // WTF?
         $sort = Employee::all()->sortBy("sort")->all();
 
         $employee->name = $request->input('employeeName');
         $employee->gender = ($request->input('gender') === self::FEMALE) ? 'F' : 'M';
         $employee->sort = ++end($sort)->sort;
+        $employee->active = ($request->input('activityCheckbox')) ? 1 : 0;
 
         $employee->save();
 
@@ -69,7 +69,7 @@ class EmployeeController extends Controller
             $files = $request->file('photos');
 
             // point to refactoring
-            foreach ($files as $file) {
+            foreach ($files as $index => $file) {
 
                 $employeePhoto = new EmployeePhoto();
                 $filename = time() . '_' . $file->getClientOriginalName();
@@ -77,6 +77,7 @@ class EmployeeController extends Controller
 
                 $employeePhoto->file_path = $filename;
                 $employeePhoto->employee_id = $employee->id;
+                $employeePhoto->sort = (int) $index + 1;
 
                 $employeePhoto->save();
             }
@@ -105,7 +106,10 @@ class EmployeeController extends Controller
      */
     public function edit(Request $request)
     {
-        $employee = Employee::with(['photos'])->findOrFail($request->id);
+        $employee = Employee::with(['photos' => function($query) {
+            return $query->orderBy('sort', 'asc');
+        }])->findOrFail($request->id);
+
         $categories = Category::all();
 
         $attachedCategories = [];
@@ -133,6 +137,7 @@ class EmployeeController extends Controller
 
         $employee->name = $request->input('employeeName');
         $employee->gender = ($request->input('gender') === self::FEMALE) ? 'F' : 'M';
+        $employee->active = ($request->input('activityCheckbox')) ? 1 : 0;
 
         $employee->save();
 
@@ -166,6 +171,24 @@ class EmployeeController extends Controller
             }
         }
 
+        if ($photos = $request['photo-sort']) {
+            $initialSortValue = 0;
+
+            foreach ($photos as $idKey => $sortValue) {
+
+                if (is_null($sortValue)) {
+                    $sortValue = $initialSortValue + 1;
+                    $initialSortValue = $sortValue;
+                }
+
+                $photoEntity = EmployeePhoto::find($idKey);
+
+                $photoEntity['sort'] = $sortValue;
+
+                $photoEntity->save();
+            }
+        }
+
         return redirect()->route('dashboard');
     }
 
@@ -189,5 +212,26 @@ class EmployeeController extends Controller
         Employee::where('id', $id)->delete();
 
         return redirect()->route('dashboard');
+    }
+
+    /**
+     * @param Request $request
+     * @return bool
+     */
+    public function deletePhoto(Request $request)
+    {
+        $photoId = (int) $request->all()['photoId'];
+
+        $photoEntity = EmployeePhoto::find($photoId);
+
+        $fileName = $photoEntity->getAttributes()['file_path'];
+
+        if (File::exists(storage_path('app/public/images/photos/') . $fileName)) {
+            File::delete(storage_path('app/public/images/photos/') . $fileName);
+        }
+
+        EmployeePhoto::where('id',$photoId)->delete();
+
+        return true;
     }
 }

@@ -28,6 +28,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class="antialiased">
     <div class="container-fluid">

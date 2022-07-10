@@ -23,16 +23,16 @@ class Localization
             App::setLocale(Session::get('locale'));
         }
 
-
         $segments = $request->segments();
 
-        $langCodeSegment = $request->segment(1);
+        $langCodeSegment = (Session::get('locale') === config('app.fallback_locale'))
+            ? config('app.fallback_locale')
+            : $request->segment(1);
 
         if (!in_array($langCodeSegment, config('app.available_locales'), true)) {
 
             $fallback = session('locale') ?: config('app.fallback_locale');
             $segments = array_merge((array) $fallback, $segments);
-
             return redirect()->to(implode('/', $segments));
         } else {
             if ($langCodeSegment !== Session::get('locale')) {
@@ -50,7 +50,6 @@ class Localization
 
             return redirect()->to($request->segment(3));
         }
-
 
         return $next($request);
     }

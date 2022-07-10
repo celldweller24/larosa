@@ -11,9 +11,4 @@ class EmployeePhoto extends Model
     use HasFactory;
 
     protected $fillable = ["file_path", "created_at", "updated_at"];
-
-   /*  public function employee()
-    {
-    return $this->belongsTo(Employee::class);
-    } */
 }

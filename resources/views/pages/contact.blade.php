@@ -1,8 +1,8 @@
 @extends('layouts.index')
 
-@section('title', __('messages.pricing.meta-title'))
-@section('keywords', __('messages.pricing.meta-keywords'))
-@section('description', __('messages.pricing.meta-description'))
+@section('title', __('messages.contact.meta-title'))
+@section('keywords', __('messages.contact.meta-keywords'))
+@section('description', __('messages.contact.meta-description'))
 
 @section('content')
     <div class="contact-page">

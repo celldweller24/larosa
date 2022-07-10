@@ -3,11 +3,20 @@ require('./bootstrap');
 import $ from 'jquery';
 import Cookies from 'js-cookie';
 import 'jquery-ui/ui/widgets/sortable.js';
+import 'jquery-ui/ui/widgets/accordion.js';
 import { Fancybox } from "@fancyapps/ui";
 
 window.$ = window.jQuery = $;
 
 $(function() {
+
+    /* Employee accordion on mobile resolution */
+    $( "#employee-accordion" ).accordion({
+        collapsible: true
+    });
+
+    $('#employee-accordion .massause-item').show();
+
 
     /* Age check window actions */
     if (!Cookies.get('ageCheck')) {
@@ -53,6 +62,28 @@ $(function() {
     /* Min height for gallery block */
     let masseusesListHeight = $('.masseuses-list').height();
     $('.gallery-view-block').css('min-height', masseusesListHeight);
+
+
+    /* Removing photos on employee edit page */
+    $('.existed-photos .existed-photos-wrapper .fa-xmark').on('click', function () {
+        let parentElement = $(this).parent()[0]
+        let photoId = parentElement.dataset.id;
+
+        $.ajax('delete-photo', {
+            type: 'GET',
+            data: { photoId },
+
+            success: function (data, status, xhr) {
+                if (status === 'success') {
+                    parentElement.remove();
+                }
+            },
+
+            error: function (jqXhr, textStatus, errorMessage) {
+                console.log(errorMessage);
+            }
+        });
+    });
 
 
     /* Sorting employees admin panel */
@@ -101,16 +132,8 @@ $(function() {
 
                 })(currentElement);
 
-                console.log(ui.item[0]);
-                console.log(currentElement.nextElementSibling);
-                console.log(lastElementSort);
-
                 (function setNextSort(nextSortElement) {
                     let nextElement = nextSortElement.nextElementSibling;
-
-                    /*if (nextSortElement.dataset.sort === lastElementSort) {
-
-                    }*/
 
                     if (nextElement !== null) {
 
@@ -139,11 +162,19 @@ $(function() {
                 allResortedElementsData.push(elementData);
             });
 
-            console.log(allResortedElementsData)
+            let elementsCount = allResortedElementsData.length;
 
-            /*$.ajax('admin/employee-sort', {
+            allResortedElementsData.forEach((value, index) => {
+                if (index + 1 === elementsCount) {
+                    if (allResortedElementsData[index - 1]['sort'] === allResortedElementsData[index]['sort']) {
+                        allResortedElementsData[index]['sort'] = allResortedElementsData[index]['sort'] + 1;
+                    }
+                }
+            });
+
+            $.ajax('admin/employee-sort', {
                 type: 'GET',
-                data: {allResortedElementsData},
+                data: { allResortedElementsData },
 
                 success: function (data, status, xhr) {
                     location.reload();
@@ -152,11 +183,7 @@ $(function() {
                 error: function (jqXhr, textStatus, errorMessage) {
                     console.log(errorMessage);
                 }
-            });*/
+            });
         }
     });
 });
-
-
-
-
