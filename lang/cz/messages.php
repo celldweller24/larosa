@@ -20,7 +20,7 @@ return [
         'contact' => 'KONTAKT',
         'way-from-metro' => '5 minut od zastávky metra “MUZEUM“',
         'contact-us' => 'Zavolejte nám',
-        'copyright' => 'Masáže a erotické masáže Praha',
+        'copyright' => 'Copyright © 2017-2021 Masáže a erotické masáže Praha',
     ],
 
     'sidebar' => [
@@ -42,7 +42,7 @@ return [
             'swingers-massage' => 'Swingers Masáže',
         ],
 
-        'masseuses' => '<span class="highlighted-yellow">Naši</span> maséři',
+        'masseuses' => 'Naši maséři',
     ],
 
     /** Home page */
@@ -53,8 +53,8 @@ return [
                           A přivedeme vás do výjimečných stavů, které jste ještě nikdy dříve nezažili.
                           Po celém vašem těle <b>rozlijeme životadárnou energii, shodíme z vás veškeré napětí a naplníme váš život novým životním elánem.</b><br><br>
                           S námi zapomenete na starosti všedních dní. Zboříte veškerá sexuální tabu a <b>oddáte se nekonečné slasti a vzrušení.</b>
-                          Naše <a href="/eroticka-masaz">erotické masáže</a> ve vás <b>probudí sexuální oheň</b>,
-                          s <a href="/tantra-masaz">tantrickými masážemi</a> <b>prožijete vyvrcholení v každé části svého těla</b> a během <a href="/kralovska-masaz">královské masáže úplně <b>zapomenete vnímat čas.</b><br><br>
+                          Naše <a href="/erotic-massage">erotické masáže</a> ve vás <b>probudí sexuální oheň</b>,
+                          s <a href="/tantric-massage">tantrickými masážemi</a> <b>prožijete vyvrcholení v každé části svého těla</b> a během <a href="/royal-massage">královské masáže úplně <b>zapomenete vnímat čas.</b><br><br>
                           Přesvědčíme vás o tom, že ty nejkrásnější erotické pocity můžete zažívat i bez pohlavního styku. Stačí jenom navštívit náš erotický salón v Praze.',
         'link-text' => 'Get unfogettable massage!',
         'meta-title' => 'Erotické masáže Praha',
@@ -77,6 +77,7 @@ return [
         'escort-service' => 'Escort servis / Masáže do domu (včetně taxi)',
         'happy-ending-moments' => 'Masáž s vyvrcholením na konci',
         'min' => 'min',
+        'and' => 'a',
         'including-taxi' => 'včetně taxi',
         'price-including' => 'Cena je včetně dopravy maséra/ky na předem domluvené místo v rámci Praha',
         'meta-title' => 'Náš ceník | Larosa.cz',
@@ -95,6 +96,8 @@ return [
 
     'contact' => [
         'title' => 'Zavolejte nám',
+        'contact' => 'Kontakt',
+        'way-from-metro' => '5 minut od zastávky metra „MUZEUM“',
         'in-prague' => 'Jsme v cetnru Prahy',
         'meta-title' => 'Kontaktujte nás | Larosa.cz',
         'meta-keywords' => 'Kontaktujte nás',
@@ -111,7 +114,7 @@ return [
                           Úplně během ní <b>zapomenete na všechny svoje starosti</b> a budete se oddávat jen výjimečným pocitům, které povedou až k vašemu sexuálnímu vyvrcholení.
                           A nebude to ledajaké vyvrcholení – <b>orgasmus intenzivně pocítíte v celém vašem těle.</b><br><br>
                           <span class="highlighted-red">Erotická masáže</span> dokonale očistí vaše tělo i ducha. Tak se přijďte přesvědčit. Naše smyslné masérky už na vás čekají.',
-        'link-text' => 'Get erotic massage!',
+        'link-text' => 'Erotická masáž',
         'meta-title' => 'Erotická masáž centru Prahy | Larosa',
         'meta-keywords' => 'Erotická masáž v Praze',
         'meta-description' => 'Naše erotická masáž vás zbaví stresu. Na všechny starosti rázem zapomenete, to vám zaručujeme. Přijďte k nám, zažijte euforii.',
@@ -119,204 +122,192 @@ return [
 
     /** Tantric massage page */
     'tantric_massage' => [
-        'title' => 'Tantric massage in Prague',
-        'description' => 'Tantric massage regarded by many as <b>the queen of all massages</b>. It must to be said rightfully.
-                          Tantric Massage uses ancient tantric-Taoist elements that combines modern elements with classical massage.
-                          The result of this combination is simply perfect.<br><br>Before starting the Tantric massage masseuse rubs up the whole body with warm sesame or almond oil that <b>makes you feel comfortably and happily,
-                          peacefully and relaxed.</b> Soon after that thanks to a sensual masseuse‘s strokes delve into the vortex of exceptional feelings that you\'ve probably never experienced before.<br><br>
-                          During the Tantric massage masseuse pays attention to your entire body, including the genitals (yoni and lingam). Her touches, movements and strokes
-                          <b>will bring you up to beatific orgasm</b> that will cover all the body and you wish this moment would never end.<br><br>
-                          You will remember the experience of the Tantric massage for a long time after closing the door our salon. We are happy to persuade you about that.',
-        'link-text' => 'Get tantric massage!',
-        'meta-title' => 'Erotic Massage Prague | Tantric Massage Prague',
-        'meta-keywords' => 'Tantric massage Prague',
-        'meta-description' => 'Tantric massage in Prague masseuse pays attention to your entire body, including the genitals (yoni and lingam).',
+        'title' => 'Tantra masáž',
+        'description' => '<b>Odhalte tajemství nejlepší ze všech masáží</b>. Tantra masáž mnozí považují za <b>královnu všech masáží.</b> Nutno říct, že právem.<br>
+                          Tantrická masáž využívá starodávných tantricko-taoistických prvků, které umě kombinuje s moderními prvky masáží klasických.<br> Výsledek této kombinace je jednoduše dokonalý.<br><br>
+                          Před zahájením tantrické masáže vám masérka potře celé tělo hřejivým sezamovým nebo mandlovým olejem, díky čemuž pocítíte <b>příjemné pocity štěstí, klidu a uvolnění.</b>
+                          Hned potom už se díky smyslným tahům masérky <b>ponoříte do víru výjimečných pocitů,</b> které jste nejspíš nikdy dříve nezažili.<br><br>
+                          Během tantra masáže se masérka věnuje celému vašemu tělu, včetně pohlavních orgánů (jóni a lingamu). Její doteky, pohyby a tahy vás <b>přivedou až ke slastnému orgasmu,</b>
+                          který se vám skrze pánev rozlije do celého těla a vy si budete přát, aby tato chvíle nikdy neskončila.
+                          Na zážitek z tantrické masáže budete vzpomínat ještě dlouho poté, co za sebou zavřete dveře našeho salonu. Rádi vás o tom přesvědčíme.',
+        'link-text' => 'Tantra masáž',
+        'meta-title' => 'Tantrické masáže v Praze | Larosa.cz',
+        'meta-keywords' => 'Tantrické masáže v Praze',
+        'meta-description' => 'Tantrická masáž je nepsanou královnou všech masáží. Tantrické masáže využívají tantricko-taoistických prvků, které umě kombinují s moderními prvky masáží klasických.',
     ],
 
     /** Relaxating massage page */
     'relaxating_massage' => [
-        'title' => 'Relaxing massage',
-        'description' => '<b>Finally, forget about all your worries</b><br><br>And you will indulge in a never-ending feelings of joy and relaxation. Our relaxing massages
-                          <b>help to detoxify the body, induce the feeling of happiness and a beneficial effect on the nervous system.</b>
-                          Charge you with new energy and degrade all the stress. After having the relaxing massage you will feel like a reborn.<br><br>
-                          Relaxating massage is a unique combination of soft music and light touches of our masseuses. Magical music <b>transports you to another world,</b> our masseuse’s strokes will relax your muscles and clear your spirit.
-                          Relaxating massage will convince you that you can achieve maximum satisfaction without sexual climax.<br><br>In today\'s world full of stress and strain relaxating massages become increasingly important.
-                          Come to us to relax, recharge and forget the worries of your everyday life.',
-        'link-text' => 'Get relaxating massage!',
-        'meta-title' => 'Erotic Massage Prague | Relaxing Massage Prague',
-        'meta-keywords' => 'Relaxing massage Prague',
-        'meta-description' => 'Relaxing massage is a unique combination of soft music and light touches of our masseuses. Contact us in Prague.',
+        'title' => 'Relaxační masáž',
+        'description' => '<b>Konečně zapomenete na všechny svoje starosti</b><br><br>A budete se oddávat jen nekončícím pocitům radosti a uvolnění. Naše relaxační masáže <b>přispívají k detoxikaci organismu, navozují pocity štěstí a blahodárně působí na nervový systém.</b>
+                          Nabijí vás novou energií a odbourají veškerý stres. Po absolvování relaxační masáže se budete cítit jako znovuzrození.<br><br>
+                          Relaxační masáž představuje unikátní kombinaci příjemné hudby a lehkých doteků naší masérky. Magická hudba vás <b>přenese do jiného světa,</b> masérka pak svými tahy <b>uvolní vaše svalstvo a očistí vašeho ducha.</b>
+                          Relaxační masáž vás přesvědčí o tom, že maximálního uspokojení můžete dosáhnout i bez sexuálního vyvrcholení.<br><br>
+                          V dnešním světě plném stresu a napětí nabývají relaxační masáže stále vyššího významu. Přijďte si k nám odpočinout, načerpat novou energii a zapomenout na starosti všedních dní.',
+        'link-text' => 'Relaxační masáž',
+        'meta-title' => 'Relaxační masáže v Praze | Larosa.cz',
+        'meta-keywords' => 'Relaxační masáže v Praze',
+        'meta-description' => 'Naše relaxační masáže si užijete na 100%. Příjemná hudba, dovedné ruce masérky. Relaxační masáž vás znovu nabije energií.',
     ],
 
     /** Hawaiian massage page */
     'hawaiian_massage' => [
-        'title' => 'Hawaiian massage',
-        'description' => 'Get rid you of headache, joints or muscles pain<br><br>It does not need a ton of drugs. All we need is just one handy masseuse and the art of
-                          Hawaiian massage. Hawaiian lomi lomi massage is <b>dilate blood vessels, stimulate blood circulation and oxygenates blood.</b> It helps to treat a wide range of modern lifestyle diseases, such as <b>headache or indigestion.</b><br><br>
-                          Hawaiian lomi lomi massage contributes <b>to the overall detoxification of your body, eliminates muscle pain and relaxes the joints.</b> This is due to the fact that during the massage the masseuse uses not only her hands, but the whole forearm.
-                          It penetrates so deep into your muscles and connective tissues themselves <b>relieves any pain.</b><br><br>Hawaiian lomi lomi massage is entirely suitable for everyone. Individual movements follow loosely and naturally,
-                          so your body is perfectly prepared for it. Whether you choose less or more intensive form, after Hawaiian massage you will be reborn.',
-        'link-text' => 'Get hawaiian massage!',
-        'meta-title' => 'Erotic Massage Prague | Hawaiian Massage Prague',
-        'meta-keywords' => 'Hawaiian massage Prague',
-        'meta-description' => 'Hawaiian lomi lomi massage is dilate blood vessels, stimulate blood circulation and oxygenates blood. Whether you choose less or more intensive form, after Hawaiian massage you will be reborn.',
+        'title' => 'Havajská masáž',
+        'description' => '<b>Zbavíme vás bolestí hlavy, kloubů nebo svalů</b><br><br>A ani k tomu nepotřebujeme tuny léků. Stačí nám jen jedna šikovná masérka a umění
+                          havajských masáží. Havajské masáže lomi lomi <b>totiž rozšiřují cévy, stimulují krevní oběh a okysličují krev.</b> Díky tomu <b>pomáhají léčit</b> celou řadu moderních civilizačních chorob, jako jsou <b>bolest hlavy nebo zažívací potíže.</b><br><br>
+                          Havajská masáž lomi lomi navíc přispívá k celkové <b>detoxikaci vašeho těla, odstraňuje svalovou bolest a uvolňuje klouby.</b> Je to dáno tím, že masérka během masáže používá nejen svoje ruce, ale celé předloktí.
+                          Proniká tak hluboko do vašich svalů a v samotných vazivových tkáních <b>uvolňuje veškerou bolest.</b><br><br>
+                          Havajská masáž lomi lomi je vhodná úplně pro každého. Jednotlivé pohyby na sebe volně a přirozeně navazují, takže vaše tělo je na ně dokonale připraveno. Ať už zvolíte jemnější nebo intenzivnější formu, po havajské masáži se od nás vrátíte jako znovuzrození.',
+        'link-text' => 'Havajská masáž',
+        'meta-title' => 'Havajské masáže Praha, masáž Lomi Lomi | Larosa.cz',
+        'meta-keywords' => 'Havajské masáže Praha',
+        'meta-description' => 'Havajské masáže přispívají k celkové detoxikaci vašeho těla, odstraňují svalovou bolest a uvolňují klouby. Havajská masáž vás zbaví bolesti hlavy, kloubů i svalů.',
     ],
 
     /** Royal VIP massage page */
     'royal_massage' => [
-        'title' => 'Royal VIP massage',
-        'description' => '<b>Pamper yourself with two women at once</b><br><br>Royal massage used by the rulers of ancient Greece and Rome to indulge themselves a long time ago.
-                          They knew of course why. The pleasant music is playing and intimate candlelight fill the room, you will be cared by two masseuses (two masseurs) at once,
-                          <b>the overall experience of the massage is extremely strong and intense.</b><br><br>
-                          During the royal massage release your body, <b>purify it from all the negative influences and enjoy endless minutes full of pleasure and excitement.</b>
-                          Royal massage has literally rejuvenating effects, so it is great popularity among for example women in their mid age.<br><br>
-                          Come to our erotic salon and treat yourself to two pairs of skilled hands that during Royal massage completely relax your body, mind and soul.',
-        'link-text' => 'Get royal massage!',
-        'meta-title' => 'Erotic Massage Prague | Royal Massage Prague',
-        'meta-keywords' => 'Royal massage Prague',
-        'meta-description' => 'Royal massage has literally rejuvenating effects, so it is great popularity among for example women in their mid age. Contact us +420 608 900 316.',
+        'title' => 'Královská VIP masáž',
+        'description' => '<b>Nechte se hýčkat dvěma masérkami najednou/b><br><br>Královskou masáž si s chutí dopřávali už dávní vládci starověkého Řecka a Říma.<br>
+                          A dobře věděli proč. Za příjemného hudebního doprovodu a intimního světla svíček se o vás starají dvě masérky (dva maséři) najednou a celkový <b>zážitek z masáže je tak nesmírně silný a intenzivní.</b><br><br>
+                          Během královské masáže dokonale <b>uvolníte svoje tělo, očistíte ho od všech negativních vlivů a užijete si nekonečné minuty plné slasti a vzrušení.</b> Královská masáž má doslova omlazující účinky, proto ji s velkou oblibou vyhledávají např. ženy ve středním věku.<br><br>
+                          Zastavte se do našeho erotického salonu a oddejte se dvěma párům šikovných rukou, které během královské masáže dokonale uvolní vaše tělo, mysl i duši.',
+        'link-text' => 'Královská VIP masáž',
+        'meta-title' => 'Královská masáž Praha | Larosa.cz',
+        'meta-keywords' => 'Královská masáž Praha',
+        'meta-description' => 'Na královskou masáž jen tak nezapomenete. U královské masáže vás masírují dvě masérky nebo dva masáři. Oddejte se dvěma párům šikovných rukou - uvolní vaše tělo, mysl i duši.',
     ],
 
     /** Nuru massage page */
     'nuru_massage' => [
-        'title' => 'Nuru massage',
-        'description' => '<b>Treat yourself to a massage on the body. Literally</b><br><br>While the majority of massages the masseuse will massage with the fingers only, in Nuru massage
-                          <b>she uses your entire body.</b> Nuru massage is therefore <b>extremely sensual, exciting and enjoyable.</b> This raises in your body exceptional feelings of pleasure and excitement distributes warmth from the head to your toes.<br><br>
-                          It all starts with shared shower with our masseuse. Then the masseuse tub your body and hers with extremely slippery Nuru gel from seaweed and then starts to massage, during that she literally passes over your body.
-                          Thanks to slippery gel you <b>will feel every touch and caress extremely intensely</b> and you will get to the state that you have never experienced before.<br><br>
-                          Nuru massage, sometimes referred to as body to body massage or slide body massage, is a funny, playful and intimate form of massage. We recommend it to anyone who wants to deviate from the daily routine and experience something really special.',
-        'link-text' => 'Get nuru massage!',
-        'meta-title' => 'Erotic Massage Prague | Nuru Massage Prague',
-        'meta-keywords' => 'Nuru massage Prague',
-        'meta-description' => 'Nuru massage, sometimes referred to as body to body massage or slide body massage, is a funny, playful and intimate form of massage. Call us +420 608 900 316.',
+        'title' => 'Nuru masáž',
+        'description' => '<b>Dopřejte si masáž na tělo. Doslova</b><br><br>Zatímco u většiny masáží vás masérka masíruje pouze prsty, u nuru masáže <b>používá celé svoje tělo.</b><br>
+                          Nuru masáž je proto <b>nesmírně smyslná, vzrušující a příjemná.</b> Vyvolává ve vašem těle výjimečné pocity rozkoše a rozvádí hřejivé vzrušení od hlavy až po konečky prstů na nohou.<br><br>
+                          Všechno to začíná společnou sprchou s masérkou. Následně masérka svoje i vaše tělo potře extrémně kluzkým nuru gelem z mořských řas a pak už zahájí masáž, během které se doslova vozí po vašem těle.
+                          Díky kluzkému gelu <b>budete každý dotek a pohlazení vnímat nesmírně intenzivně</b> a dostanete se do stavu, který jste nikdy dříve nezažili.<br><br>
+                          Nuru masáže, někdy nazývaná jako body to body masáž nebo body slide masáž, je zábavnou, hravou a intimní formou masáže. Doporučujeme ji každému, kdo chce vybočit z každodenního stereotypu a zažít něco opravdu výjimečného.',
+        'link-text' => 'Nuru masáž',
+        'meta-title' => 'Nuru masáže Praha | Larosa.cz',
+        'meta-keywords' => 'Nuru masáže Praha',
+        'meta-description' => 'Nuru masáže - to jsou masáže tělo na tělo. Masérka se při nuru masáži doslova vozí po vašem těle. Nuru masáž je opravdu něco vyjímečného.',
     ],
 
     /** Escort service page */
     'escort_service' => [
-        'title' => 'Escort service Prague',
-        'description' => '<b>Pamper yourself at your own home</b><br><br>
-                          Why do you have to trudge to our salon, when our masseuses can be sent directly to you? Just just
-                          call us, choose one of our amazing massages and order escort service. And immediately our masseuse will be delivered directly to your home.
-                          Simple, fast and extremely comfortable. What do you think?',
-        'link-text' => 'Get escort service massage!',
-        'meta-title' => 'Erotic Massage Prague | Escort service Prague',
-        'meta-keywords' => 'Escort service Prague',
-        'meta-description' => 'Would you like escort massage in Prague? Just just call us, choose one of our amazing massages and order escort service Prague. Call +420 608 900 316.',
+        'title' => 'Eskort servis',
+        'description' => '<b>Nabizime masaze na vyjezd k Vam</b><br><br><b>Nechte se hýčkat přímo u vás doma</b><br><br>
+                          Proč byste se trmáceli až do našeho salonu, když můžeme masérku poslat přímo za vámi.<br>
+                          Stačí jenom zvednout telefon, vybrat jednu z našich úžasných masáží a objednat si eskort servis. A my obratem masérku dovezeme přímo až k vám domů. Jednoduché, rychlé a nesmírně pohodlné. Co říkáte?',
+        'link-text' => 'Eskort servis',
+        'meta-title' => 'Eskort masáže Praha | Larosa.cz',
+        'meta-keywords' => 'Eskort masáže Praha',
+        'meta-description' => 'Uděláme vám erotickou masáž u vás doma. Eskort masáží je u zákazníků velmi oblíben. Stačí jen zvednout telefon a můžete mít masérku nebo maséra doma.',
     ],
 
     /** Hotel service page */
     'hotel_service' => [
-        'title' => 'Hotel service',
-        'description' => '<b>Exceptional experience in the exceptional environment</b><br><br>
-                          You do not have to travel anywhere. Our masseuses would like to get to any of Prague hotel.
-                          Just call us, choose the massage from the menu and order the hotel service. Then the masseuse will be brought in front of your hotel where you will take her to your room and spend special moments together at one of our unique massages.',
-        'link-text' => 'Get hotel service massage!',
-        'meta-title' => 'Erotic Massage Prague | Hotel service Prague',
-        'meta-keywords' => 'Hotel service Prague',
-        'meta-description' => 'You do not have to travel anywhere. Our masseuses would like to get to any of Prague hotel. Contact us +420 608 900 316.',
+        'title' => 'Hotel servis',
+        'description' => '<b>Výjimečný zážitek ve výjimečném prostředí</b><br><br>
+                          Už nemusíte nikam cestovat. Naše masérky za vámi rády dojedou na jakýkoliv pražský hotel.<br>
+                          Stačí jenom zvednout telefon, vybrat masáž z nabídky a objednat si hotel servis. My následně masérku přivezeme před váš hotel,
+                          odkud si ji odvedete na svůj pokoj a společně prožijete výjimečné chvíle při jedné z našich jedinečných masáží.',
+        'link-text' => 'Hotel servis',
+        'meta-title' => 'Hotel servis Praha | Larosa.cz',
+        'meta-keywords' => 'Hotel servis Praha',
+        'meta-description' => 'Náš hotel servis vám doveze masérku až k vám na hotel. Objedntejte si náš hotel servis. Masérka vás obslouží.',
     ],
 
     /** Secret wish page */
     'secret_wish' => [
-        'title' => 'Secret wish',
-        'description' => '<b>There are no taboos for us</b><br><br>
-                          Do you want a unique and innovative massage, but you could not find in
-                          our offer? Call us and do not be afraid and feel free to share your wishes. We will be able to do everything to satisfy you.
-                          Our masseuses are creative and will be glad to do interesting experiments. We firmly believe that we can come to agreement.',
-        'link-text' => 'Get secret wish massage!',
-        'meta-title' => 'Erotic Massage Prague | Your secret wish',
-        'meta-keywords' => 'Your secret wish',
-        'meta-description' => 'Do you want a unique and innovative massage, but you could not find in our offer? Call us  +420 608 900 316.',
+        'title' => 'Tajná přání',
+        'description' => '<b>U nás neexistují žádná tabu</b><br><br>
+                          Máte chuť na výjimečnou a netradiční masáž, kterou jste ale v naší nabídce nenašli?<br>
+                          Zavolejte nám a nebojte se o své přání podělit. Uděláme vše, co je v našich silách, abychom vám vyhověli.
+                          Naše masérky jsou kreativní a nebrání se zajímavým experimentům. Pevně věříme, že se dokážeme domluvit.',
+        'link-text' => 'Tajná přání',
+        'meta-title' => 'Tajná přání | Larosa.cz',
+        'meta-keywords' => 'YTajná přání',
+        'meta-description' => 'Splníme vaše tajná přání. Naše masérky jsou kreativní a nebrání se zajímavým experimentům. Pevně věříme, že se dokážeme domluvit.',
     ],
 
     /** Swingers massage page */
     'swingers_massage' => [
-        'title' => 'Swingers massage',
-        'description' => 'Swingers massage..in our salon we are very pleased to offer you our new and swingers massage..
-                          it is about erotic massage that takes place in one room.. during this massage you can choose between several masseuses and very great excitement of this massage leads to more orgasms that are included in massage.
-                          .swingers massage is a unique and very powerful erotic experience which we recommend just to try it ..
-                          in this massage you are going to take away very far beyond your erotic fantasy and expand the horizons of your erotic experience ..',
-        'link-text' => 'Get swingers massage!',
-        'meta-title' => 'Erotic Massage Prague | Swinger Massage',
-        'meta-keywords' => 'Swingers massages Prague',
-        'meta-description' => 'Swingers massage..in our salon we are very pleased to offer you our new and swingers massage in Prague.',
+        'title' => 'Swingers masáže',
+        'description' => '<b>V našem saloně vám velmi rádi nabídneme naši novinku a to swingers masáž.</b><br><br>
+                          Jedná se o hromadnou erotickou masáž která probíhá v jednom pokoji, během této masáže si střídáte masérky a pro velmi veliké vzrušení z této masáže dochází k více orgazmům ktéré jsou v ceně masáže.
+                          Swingers masáž je jedinečným a velmi silným erotickým zážitkem který můžem jen doporučit. Tato masáž vás veme daleko velmi daleko za hranici vaší erotické fantazie a rozšíří obzory ve vaší erotické skušenosti.',
+        'link-text' => 'Swingers masáže',
+        'meta-title' => 'Swingers masáže Praha | Larosa.cz',
+        'meta-keywords' => 'Swingers masáže Praha',
+        'meta-description' => 'Swingers masáž je jedinečným a velmi silným erotickým zážitkem. Během této masáže si střídáte masérky. Na to jistě nezapomenete!',
     ],
 
     /** For men page */
     'for_men' => [
-        'title' => 'For men',
-        'box-title' => 'Massage for men',
-        'description' => '<b>You will finally come to other thoughts</b><br><br>
-                          Where else after a hard working day you will have a rest better than in our salon?
-                          Come, take off the clothes and lie down on your belly. Our masseuse, dressed only in a light exciting lingerie, starts the massage.
-                          First relax your back then begins to massage gently the inner thighs or buttocks. This is all very slowly and with feeling , so you can enjoy every touch.
-                          The feelings that you will be experiencing during this, cannot be decribed with words.<br><br>
-                          And it is just the beginning. Then you turn on the back and pleasant masseuse‘s touches please even your belly or chest. You will be satisfied grunting with pleasure.
-                          Fly somewhere round the universe. Once you feel sufficiently relaxed and give permission to move the masseuse to the most intimate parts.
-                          Not just her fingers, but also her breasts released throughout your body and bring you to an amazing climax that you\'ve never experienced before.<br><br>
-                          Our massage gets rid of accumulated stress and tension. You will be awaken for a new life and ignited with erotic spark. From the lounge you leave as the satisfied man full of energy and zest for life.',
-        'link-text' => 'Get massage for men!',
-        'meta-title' => 'Erotic Massage Prague | Massage for men',
-        'meta-keywords' => 'Erotic massages for men',
-        'meta-description' => 'The best massages for men in our salon. Our massage gets rid of accumulated stress and tension. Try us.',
+        'title' => 'Masáž pro muže',
+        'box-title' => 'Masáž pro muže',
+        'description' => '<b>U nás konečně přijdete na jiné myšlenky</b><br><br>
+                          Nikde jinde si po náročném pracovním dni neodpočinete lépe, než v našem salonu. Přijdete, svléknete se do naha a lehnete si na bříško.
+                          Naše masérka, oblečená pouze v lehkém dráždivém prádélku, začne s masáží. Nejprve uvolní vaše záda, pak začne lehce masírovat vnitřní stranu stehen nebo zadeček.
+                          To vše velmi pomalu a s citem – tak, abyste si užili každý její dotek. <b>Pocity, které u toho budete zažívat, nelze slovy popsat.</b><br><br>
+                          A to je navíc teprve začátek. Pak se totiž otočíte na záda a masérka příjemnými doteky potěší i vaše bříško nebo hrudník. <b>Budete si spokojeně chrochtat blahem.</b> Létat kdesi ve vesmíru.
+                          A jakmile se budete cítit dostatečně uvolnění a dáte k tomu svolení, přesune se masérka i na nejintimnější partie. Nejen prsty, ale také svými prsy uvolní celé vaše tělo a <b>přivede vás k úžasnému vyvrcholení, které jste nikdy dříve nezažili.</b><br><br>
+                          Naše masáže vás zbaví nahromaděného stresu a napětí. Probudí ve vás nový život a zapálí erotickou jiskru. Ze salonu odejdete jako spokojený člověk nabitý energií a životním elánem.',
+        'link-text' => 'Masáž pro muže',
+        'meta-title' => 'Masáže pro muže v Praze | Larosa.cz',
+        'meta-keywords' => 'Masáže pro muže',
+        'meta-description' => 'Zkuste naše masáže pro muže v centru Prahy. Naše masáže vás zbaví nahromaděného stresu a napětí. Probudí ve vás nový život a zapálí erotickou jiskru.',
     ],
 
     /** For women page */
     'for_woman' => [
-        'title' => 'For women',
-        'box-title' => 'Massage for woman',
-        'description' => '<b>Increase your confidence and know yourselves</b><br><br>
-                          Nowadays men do not have time or mood to devote you about 10 minutes a day. To pamper your body and give you exactly what you boundless desire has been.
-                          A few such men exist and they work in our salon. Come to make it sure<br><br>.
-                          At the beginning of the massage lie on your belly. Masseur, dressed only in underwear, slowly begins with a light massage of your back, thighs and buttocks.
-                          To each movement he gives tenderness, every touch is extremely gentle, friendly and evokes wonderful feelings. You would like the massage will never come to the end.<br><br>
-                          The best is about to come. Once you turn on the back the massager starts massaging your breasts, belly and following your permission intimate parts, enter a totally different world.
-                          You will open a new part of your sexuality, you sigh with excitement and eventually get to the very top of your well-being.<br><br>
-                          <i>PS: If you are embarrassed in front of a masseur, you can also have the masseuse to make massage.</i>',
-        'link-text' => 'Get massage for women!',
-        'meta-title' => 'Erotic Massage Prague | Massage for women',
-        'meta-keywords' => 'Erotic massages for women',
-        'meta-description' => 'The best massages for women in our salon. Our salon you will leave reborn. As a self-confident woman who sees the world in bright colors.',
+        'title' => 'Masáž pro ženy',
+        'box-title' => 'Masáž pro ženy',
+        'description' => '<b>Zvýšíte si sebevědomí a poznáte sebe sama</b><br><br>
+                          Dnešní muži většinou nemají čas ani náladu na to, aby se vám několik desítek minut v kuse naplno věnovali.
+                          Aby hýčkali vaše tělo a dávali vám přesně to, po čem v danou chvíli bezmezně toužíte. Pár takových mužů ale existuje – a ti pracují v našem salonu. Přijďte se o tom přesvědčit.<br><br>
+                          Na začátku masáže si lehnete na bříško. Masér, oblečen jen ve spodním prádle, pomalu začne s lehkou masáží vašich zad, stehen a zadečku. Do každého pohybu vkládá něžnost, <b>každý dotek je nesmírně jemný, příjemný a vyvolává nádherné pocity</b>. Budete si přát, aby masáž nikdy neskončila.<br><br>
+                          To nejlepší přitom teprve přijde. Jakmile si vás masér otočí na záda a začne masírovat vaše poprsí, bříško a po vašem svolení i intimní partie, vstoupíte do úplně jiného světa.
+                          <b>Poznáte novou stránku svojí sexuality, budete vzdychat vzrušením a nakonec vystoupíte na samý vrchol vašeho blaha</b><br><br>
+                          Z našeho salonu <b>budete odcházet jako znovuzrozená. Jako sebevědomá</b> žena, která vidí svět ve veselých barvách. Věříme, že tento pocit si zaslouží každá žena.<br><br>
+                          <i>P.S.: Pokud byste se před masérem styděla, může vám masáž provést také masérka.</i>',
+        'link-text' => 'Masáže pro ženy',
+        'meta-title' => 'Masáže pro ženy v Praze | Larosa.cz',
+        'meta-keywords' => 'Masáže pro ženy',
+        'meta-description' => 'Dámy, vyzkoušejte naše super masáže v Praze. Poznáte novou stránku svojí sexuality, budete vzdychat vzrušením a nakonec vystoupíte na samý vrchol vašeho blaha.',
     ],
 
     /** For couple page */
     'for_couple' => [
-        'title' => 'Massage for couples',
-        'box-title' => 'Massage for couple',
-        'description' => '<b>The benificial thearaphy for your affiliate relationship</b><br><br>
-                          Whether you might find after years of relationship that the erotic experiences of your bedroom is not so intense and spontaneous, as it used to be at the beginning.
-                          Sex becomes somewhat stereotypical. Slips out of its former passion and expectations. But do you know that\'s all you can change simply? And start from scratch?<br><br>
-                          Enough to visit our salon in Prague and enjoy the massage for couples, during which you will know each other perfetly again.
-                          You wake up in yourself and your partner the erotic desire, that you have not been come through for a long time.
-                          Strengthen mutual bonds, reopen each other and realize how much is your partner worth for you.<br><br>
-                          Massage for couples are performed by masseurs and masseuses, individually or in pairs. You will choose which option suits you the most.
-                          And right after that you can indulge into endless pleasure that with your partner you will feel much more than if you being masseured by your own.<br><br>
-                          <i>TIP: Massage for couples in the form of a gift voucher is an original and practical gift for your partner. For example, Christmas, birthdays or anniversaries.
-                          Both of you can relax, strengthen your relationship and you will experience exceptional moments you will not forget for a long time.</i>',
-        'link-text' => 'Get massage for couple!',
-        'meta-title' => 'Erotic Massage Prague | Massage for couples',
-        'meta-keywords' => 'Erotic massages for couples',
-        'meta-description' => 'Try our massages for couples in Prague. Massage for couples are performed by masseurs and masseuses, individually or in pairs. Try us.',
+        'title' => 'Masáž pro páry',
+        'box-title' => 'Masáž pro páry',
+        'description' => '<b>Blahodárná terapie pro váš partnerský vztah</b><br><br>
+                           Ať se snažíte sebevíc, po letech vztahu nejsou erotické zážitky z vaší ložnice tak intenzivní a spontánní, jako tomu bylo na začátku. Sex se stane do jisté míry stereotypní.
+                           Vytratí se z něj dřívější vášeň a očekávání. Víte ale, že to všechno můžete jednoduše změnit? A začít úplně od začátku?<br><br>
+                           Stačí jenom navštívit náš salon v Praze a vychutnat si masáž pro páry, během které <b>dokonale poznáte jeden druhého.</b> Probudíte v sobě samém i partnerovi erotickou touhu, kterou jste už dlouho nepoznali.
+                           <b>Posílíte vzájemné pouto, otevřete se jeden druhému a uvědomíte si, jak vám na vašem partnerovi záleží.</b><br><br>
+                           Masáž pro páry provádí maséři i masérky, jednotlivě nebo ve dvojicích. Sami si vyberete, která varianta vám vyhovuje nejvíce. A hned potom už se <b>můžete oddávat nekonečné rozkoši,</b> kterou si ve společnosti partnera <b>užijete mnohem více</b>, než kdybyste na masáži byli sami.<br><br>
+                           <i>TIP: Masáž pro páry ve formě dárkového poukazu je originálním a praktickým dárkem pro vašeho partnera. Třeba na vánoce, narozeniny nebo k výročí. Oba si odpočinete, posílíte svůj vztah a prožijete výjimečné chvíle, na které dlouho nezapomenete.</i>',
+        'link-text' => 'Masáž pro páry',
+        'meta-title' => 'Masáže pro páry v Praze | Larosa.cz',
+        'meta-keywords' => 'Masáž pro páry',
+        'meta-description' => 'Super nezapomenutelné masáže pro páry v Praze. Blahodárná terapie pro váš partnerský vztah. Navštivte nás.',
     ],
 
     /** For gay page */
     'for_gay' => [
-        'title' => 'For gays',
-        'box-title' => 'Massage for gay',
-        'description' => '<b>Finally, the place where there are no prejudices</b><br><br>
-                          While somewhere else, you will probably have met with incomprehension or ridicule, here we come up towards you.
-                          Whether you are gay, bisexual or heterosexual, with us you can enjoy a nice massage made by massage therapist.
-                          Well-built hot man who expertly leads you to the very top of the welfare.<br><br>
-                          First, lie on your belly and the masseur will pay attention and massage your back, thighs or buttocks.
-                          Quickly he finds the optimal intensity of pressure and touches in order every move will be the most enjoyable.
-                          To keep you excited and gradually prepared for the second part of the massage which is even better than the first.<br><br>
-                          During the massage you lie down on your back and the masseur starts to massage your tummy, chest, and if you want, won’t miss your intimate parts.
-                          In this part of the massage you will be completely released it will make you feel a fantastic climax that you won’t feel anywhere else.<br><br>
-                          Massage for gays we encourage anyone who wants to get out of a rut and enrich their erotic life. The experience of our salon you will remember for a long time after having closed the door behind.',
-        'link-text' => 'Get massage for gays!',
-        'meta-title' => 'Erotic Massage Prague | Gay Massage Prague',
-        'meta-keywords' => 'Erotic massages for gays',
-        'meta-description' => 'Try our massages for gays in Prague. Massage for gays we encourage anyone who wants to get out of a rut and enrich their erotic life.',
+        'title' => 'Masáž pro gaye',
+        'box-title' => 'Masáž pro gaye',
+        'description' => '<b>Konečně místo, kde neexistují žádné předsudky</b><br><br>
+                          Zatímco kdekoliv jinde byste se zřejmě setkali s nepochopením nebo posměšky, u nás vám vyjdeme maximálně vstříc. Ať už jste homosexuál, bisexuál nebo heterosexuál, můžete si u nás vychutnat příjemnou masáž od maséra.
+                          Vypracovaného muže, který vás zkušeně <b>přivede až na samý vrchol blaha.</b><br><br>
+                          Nejprve si lehnete na bříško a masér se bude věnovat vašim zádům, stehnům nebo zadečku. Rychle najde optimální intenzitu tlaků a doteků, aby pro vás každý jeho pohyb byl <b>maximálně příjemný.</b>
+                          Aby vás vzrušoval a postupně připravoval na druhou část masáže, která je ještě lepší, než ta první.<br><br>
+                          Během ní si totiž lehnete na záda a masér začne s masáží vašeho bříška, hrudníku, a pokud budete chtít, nevynechá ani intimní partie. Při této části masáže se <b>úplně uvolníte a docílíte fantastického vyvrcholení, které jen tak někde nezažijete.</b><br><br>
+                          Masáž pro gaye doporučujeme každému muži, který se chce vymanit ze zaběhlých stereotypů a obohatit svůj erotický život. Na zážitek z našeho salonu <b>budete vzpomínat ještě dlouho</b> poté, co za sebou zavřete dveře.',
+        'link-text' => 'Masáž pro gaye',
+        'meta-title' => 'Masáže pro gaye v Praze | Larosa.cz',
+        'meta-keywords' => 'Masáž pro gaye',
+        'meta-description' => 'Masáž pro gaye doporučujeme každému muži, který se chce vymanit ze zaběhlých stereotypů a obohatit svůj erotický život. Přijďte k nám.',
     ],
 ];
 

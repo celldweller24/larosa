@@ -1,72 +1,114 @@
-<aside>
-    <p class="logo">
-        <a href="//www.larosa.cz/">
-            <span>Massage<strong class="highlighted-yellow">XX</strong></span>
-            {{ __('messages.sidebar.logo.description') }}
-        </a>
-    </p>
+<aside class="">
     <div class="sidebar">
+        <p class="logo">
+            <a href="/">
+                <span>Massage<strong class="highlighted-yellow">XX</strong></span>
+                {{ __('messages.sidebar.logo.description') }}
+            </a>
+        </p>
+
+        <div class="menu-close-button">
+            <span><i class="fa fa-angle-double-left"></i> menu</span>
+        </div>
+
         <nav class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="/">{{ __('messages.sidebar.menu.home') }}</a>
-                    <i></i>
+                    <a href="/">
+                        {{ __('messages.sidebar.menu.home') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="erotic-massage">{{ __('messages.sidebar.menu.erotic-massage') }}</a>
-                    <i></i>
+                    <a href="/erotic-massage">
+                        {{ __('messages.sidebar.menu.erotic-massage') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="tantric-massage">{{ __('messages.sidebar.menu.tantric-massage') }}</a>
-                    <i></i>
+                    <a href="/tantric-massage">
+                        {{ __('messages.sidebar.menu.tantric-massage') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="relaxating-massage">{{ __('messages.sidebar.menu.relaxating-massage') }}</a>
-                    <i></i>
+                    <a href="/relaxating-massage">
+                        {{ __('messages.sidebar.menu.relaxating-massage') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="hawaiian-massage">{{ __('messages.sidebar.menu.hawaiian-massage') }}</a>
-                    <i></i>
+                    <a href="/hawaiian-massage">
+                        {{ __('messages.sidebar.menu.hawaiian-massage') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="royal-massage">{{ __('messages.sidebar.menu.royal-vip-massage') }}</a>
-                    <i></i>
+                    <a href="/royal-massage">
+                        {{ __('messages.sidebar.menu.royal-vip-massage') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="nuru-massage">{{ __('messages.sidebar.menu.nuru-massage') }}</a>
-                    <i></i>
+                    <a href="/nuru-massage">
+                        {{ __('messages.sidebar.menu.nuru-massage') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="escort-service">{{ __('messages.sidebar.menu.escort-service') }}</a>
-                    <i></i>
+                    <a href="/escort-service">
+                        {{ __('messages.sidebar.menu.escort-service') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="hotel-service">{{ __('messages.sidebar.menu.hotel-service') }}</a>
-                    <i></i>
+                    <a href="/hotel-service">
+                        {{ __('messages.sidebar.menu.hotel-service') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="secret-wish">{{ __('messages.sidebar.menu.secret-wish') }}</a>
-                    <i></i>
+                    <a href="/secret-wish">
+                        {{ __('messages.sidebar.menu.secret-wish') }}
+                        <i></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="swingers-massage">{{ __('messages.sidebar.menu.swingers-massage') }}</a>
-                    <i></i>
+                    <a href="/swingers-massage">
+                        {{ __('messages.sidebar.menu.swingers-massage') }}
+                        <i></i>
+                    </a>
                 </li>
             </ul>
         </nav>
 
         <div class="contact-us">
             <span>{{ __('messages.contact.title') }}</span>
-            +420 608 900 316<br><br>
+            +420 608 900 316
             <span class="additional-info">{{ __('messages.contact.in-prague') }}</span>
         </div>
 
         <div class="masseuses-list">
-            <h2>{{ __('messages.sidebar.masseuses') }}</h2>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
+            <h2>
+                <a href="/photogallery">{{ __('messages.sidebar.masseuses') }}</a>
+            </h2>
 
+            @if (isset($categoryEmployees))
+                <ul class="masseuses">
+                    @foreach ($categoryEmployees as $key => $categoryEmployee)
+                        <li class="row {{ ($key === 0) ? 'active' : '' }}">
+                            <a href="#" class="col-10" data-id="{{ $categoryEmployee->id }}" onclick="return false;">
+                                {{ $categoryEmployee->name }}
+                            </a>
+                            @if ($categoryEmployee->gender === 'F')
+                                <span class="icon-female col-2"></span>
+                            @else
+                                <span class="icon-male col-2"></span>
+                            @endif
+                        </li>
+                    @endforeach
+                </ul>
+            @endif
+        </div>
     </div>
 </aside>
