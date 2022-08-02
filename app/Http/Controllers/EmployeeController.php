@@ -54,7 +54,7 @@ class EmployeeController extends Controller
 
         $employee->name = $request->input('employeeName');
         $employee->gender = ($request->input('gender') === self::FEMALE) ? 'F' : 'M';
-        $employee->sort = ++end($sort)->sort;
+        $employee->sort = (is_bool($sort)) ? 1 : ++end($sort)->sort;
         $employee->active = ($request->input('activityCheckbox')) ? 1 : 0;
 
         $employee->save();

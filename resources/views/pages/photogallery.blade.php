@@ -11,22 +11,22 @@
 
         <div class="grid img-list">
             <div class="row padding-bottom--sm">
-                <a class="col col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('storage/images/photos/salon_1.jpg') }}">
-                    <img src="{{ url('storage/images/photos/salon_1.jpg') }}">
+                <a class="col col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('images/photos/salon_1.jpg') }}">
+                    <img src="{{ url('images/photos/salon_1.jpg') }}">
                 </a>
-                <a class="col col-4 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('storage/images/photos/salon_2.jpg') }}">
-                    <img src="{{ url('storage/images/photos/salon_2.jpg') }}">
+                <a class="col col-4 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('images/photos/salon_2.jpg') }}">
+                    <img src="{{ url('images/photos/salon_2.jpg') }}">
                 </a>
-                <a class="col col-4 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('storage/images/photos/salon_3.jpg') }}">
-                    <img src="{{ url('storage/images/photos/salon_4.jpg') }}">
+                <a class="col col-4 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('images/photos/salon_3.jpg') }}">
+                    <img src="{{ url('images/photos/salon_4.jpg') }}">
                 </a>
             </div>
             <div class="row">
-                <a class="col col-6 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('storage/images/photos/salon_4.jpg') }}">
-                    <img src="{{ url('storage/images/photos/salon_4.jpg') }}">
+                <a class="col col-6 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('images/photos/salon_4.jpg') }}">
+                    <img src="{{ url('images/photos/salon_4.jpg') }}">
                 </a>
-                <a class="col col-6 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('storage/images/photos/salon_5.jpg') }}">
-                    <img src="{{ url('storage/images/photos/salon_5.jpg') }}">
+                <a class="col col-6 col-4 p-1 mb-1" data-fancybox="salon" data-src="{{ url('images/photos/salon_5.jpg') }}">
+                    <img src="{{ url('images/photos/salon_5.jpg') }}">
                 </a>
             </div>
         </div>
