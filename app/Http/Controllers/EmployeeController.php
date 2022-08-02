@@ -51,7 +51,6 @@ class EmployeeController extends Controller
         $employee = new Employee();
 
         $sort = Employee::all()->sortBy("sort")->all();
-        dd($sort);
 
         $employee->name = $request->input('employeeName');
         $employee->gender = ($request->input('gender') === self::FEMALE) ? 'F' : 'M';
