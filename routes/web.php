@@ -40,54 +40,6 @@ Route::controller(AdminController::class)->group(function () {
     Route::get('admin/employee-sort', 'employeeSort')->name('employeeSort');
 });
 
-/* Page routes */
-/*Route::group(['middleware' => 'local', 'prefix' => '{lang?}'], function () {
-
-    Route::controller(InfoPagesController::class)->group(function () {
-        Route::get('/', 'home')->name('home');
-        Route::get('erotic-massage', 'eroticMassage');
-        Route::get('tantric-massage', 'tantricMassage');
-        Route::get('relaxating-massage', 'relaxatingMassage');
-        Route::get('hawaiian-massage', 'hawaiianMassage');
-        Route::get('royal-massage', 'royalMassage');
-        Route::get('nuru-massage', 'nuruMassage');
-        Route::get('escort-service', 'escortService');
-        Route::get('hotel-service', 'hotelService');
-        Route::get('secret-wish', 'secretWish');
-        Route::get('swingers-massage', 'swingersMassage');
-    });
-
-    Route::name('types')->controller(TypePagesController::class)->group(function () {
-        Route::get('for-men', 'forMen');
-        Route::get('for-women', 'forWomen');
-        Route::get('for-couples', 'forCouples');
-        Route::get('for-gays', 'forGays');
-    });
-
-    Route::get('pricing', function () {
-        return view('pages.pricing');
-    });
-
-    Route::get('photogallery', function () {
-        return view('pages.photogallery');
-    });
-
-    Route::get('contact', function () {
-        return view('pages.contact');
-    });
-
-    // Language switcher
-    Route::get('language/{locale}', [AppController::class, 'language']);
-
-    // Authentication
-    Auth::routes();
-
-    // Admin panel
-    Route::resource('dashboard', EmployeeController::class);
-
-});*/
-
-
 /*****************/
 
 /* Page routes */
