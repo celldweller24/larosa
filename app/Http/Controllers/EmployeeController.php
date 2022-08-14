@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\File;
 
 class EmployeeController extends Controller
 {
-    const FEMALE = 1;
+    public const FEMALE = 1;
 
-    const MALE = 2;
+    public const MALE = 2;
 
     /**
      * Display a listing of the resource.
@@ -23,8 +23,6 @@ class EmployeeController extends Controller
     public function index(Request $request)
     {
 
-        /* $employee = Employee::findOrFail($request->id);
-        return view('admin.employee', ['employee' => $employee]); */
     }
 
     /**
@@ -53,7 +51,7 @@ class EmployeeController extends Controller
         $sort = Employee::all()->sortBy("sort")->all();
 
         $employee->name = $request->input('employeeName');
-        $employee->gender = ($request->input('gender') === self::FEMALE) ? 'F' : 'M';
+        $employee->gender = ((int) $request->input('gender') === self::FEMALE) ? 'F' : 'M';
         $employee->sort = ($sort) ? ++end($sort)->sort : 1;
         $employee->active = ($request->input('activityCheckbox')) ? 1 : 0;
 
@@ -85,18 +83,6 @@ class EmployeeController extends Controller
 
         return redirect()->route('dashboard');
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    /* public function show(Request $request)
-    {
-        $employee = Employee::findOrFail($request->id);
-        return view('admin.employee', ['employee' => $employee]);
-    } */
 
     /**
      * Show the form for editing the specified resource.
@@ -136,7 +122,6 @@ class EmployeeController extends Controller
         $employee = Employee::find($id);
 
         $employee->name = $request->input('employeeName');
-        $employee->gender = ($request->input('gender') === self::FEMALE) ? 'F' : 'M';
         $employee->active = ($request->input('activityCheckbox')) ? 1 : 0;
 
         $employee->save();
