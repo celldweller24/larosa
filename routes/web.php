@@ -85,7 +85,7 @@ $optionalLanguageRoutes = function() {
     //Route::resource('dashboard', EmployeeController::class);
 };
 
-Route::group(['middleware' => 'local'], $optionalLanguageRoutes);
-Route::group(['middleware' => 'local', 'prefix' => '{lang?}'], $optionalLanguageRoutes);
+Route::group(['middleware' => ['local', 'cache.headers:public;max_age=2628000;etag']], $optionalLanguageRoutes);
+Route::group(['middleware' => ['local', 'cache.headers:public;max_age=2628000;etag'], 'prefix' => '{lang?}'], $optionalLanguageRoutes);
 
 
