@@ -55,18 +55,18 @@
                         <i></i>
                     </a>
                 </li>
-                <li>
+               {{-- <li>
                     <a href="/escort-service">
                         {{ __('messages.sidebar.menu.escort-service') }}
                         <i></i>
                     </a>
-                </li>
-                <li>
+                </li>--}}
+               {{-- <li>
                     <a href="/hotel-service">
                         {{ __('messages.sidebar.menu.hotel-service') }}
                         <i></i>
                     </a>
-                </li>
+                </li>--}}
                 <li>
                     <a href="/secret-wish">
                         {{ __('messages.sidebar.menu.secret-wish') }}
