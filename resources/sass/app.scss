@@ -56,7 +56,7 @@ h1 {
 
             height: auto;
             padding: 0 0 0 30px;
-            background: transparent url('~/storage/images/prechod.png') no-repeat -30px 0px;
+            background: transparent url('/storage/app/public/images/prechod.png') no-repeat -30px 0px;
 
             .logo {
                 line-height: 1;
@@ -135,7 +135,7 @@ h1 {
                 color: #fff;
                 font-size: 24px;
                 font-weight: 700;
-                background: $color-light-green url('~/storage/images/phone.png') no-repeat 12px 28px;
+                background: $color-light-green url('/storage/app/public/images/phone.png') no-repeat 12px 28px;
 
                 span {
                     display: block;
@@ -191,21 +191,21 @@ h1 {
                             height: 35px;
 
                             &.icon-female {
-                                background:  url('~/storage/images/ico-women.png') no-repeat 0px -4px;
+                                background:  url('/storage/app/public/images/ico-women.png') no-repeat 0px -4px;
                             }
 
                             &.icon-male {
-                                background:  url('~/storage/images/ico-men.png') no-repeat 0px -4px;
+                                background:  url('/storage/app/public/images/ico-men.png') no-repeat 0px -4px;
                             }
 
                             &:hover {
 
                                 &.icon-female {
-                                    background:  url('~/storage/images/ico-women.png') no-repeat 0px -51px;
+                                    background:  url('/storage/app/public/images/ico-women.png') no-repeat 0px -51px;
                                 }
 
                                 &.icon-male {
-                                    background:  url('~/storage/images/ico-men.png') no-repeat 0px -51px;
+                                    background:  url('/storage/app/public/images/ico-men.png') no-repeat 0px -51px;
                                 }
                             }
                         }
@@ -220,11 +220,11 @@ h1 {
                             span {
 
                                 &.icon-female {
-                                    background:  url('~/storage/images/ico-women.png') no-repeat 0px -51px;
+                                    background:  url('/storage/app/public/images/ico-women.png') no-repeat 0px -51px;
                                 }
 
                                 &.icon-male {
-                                    background:  url('~/storage/images/ico-men.png') no-repeat 0px -51px;
+                                    background:  url('/storage/app/public/images/ico-men.png') no-repeat 0px -51px;
                                 }
                             }
                         }
@@ -256,7 +256,7 @@ h1 {
 
     header {
         padding-top: 30px;
-        background: url('~/storage/images/header_bg-3.png') no-repeat -115px 10px;
+        background: url('/storage/app/public/images/header_bg-3.png') no-repeat -115px 10px;
         height: 245px;
 
         .mobile-control-block {
