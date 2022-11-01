@@ -47,7 +47,7 @@ h1 {
 }*/
 
 .left {
-    background: $color-main url('~/storage/images/left_bg.jpg') no-repeat right top;
+    background: $color-main url('/storage/app/public/images/left_bg.jpg') no-repeat right top;
 
     aside {
         justify-content: end;
