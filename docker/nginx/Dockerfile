@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.17.8-alpine
 
 RUN apk update \
     && apk upgrade \
@@ -8,15 +8,13 @@ RUN apk update \
 
 RUN apk add --no-cache curl
 
-#RUN set -x ; \
-#    addgroup -g 82 -S www-data ; \
-#    adduser -u 82 -D -S -G www-data www-data && exit 0 ; exit 1
+RUN set -x ; \
+    addgroup -g 82 -S www-data ; \
+    adduser -u 82 -D -S -G www-data www-data && exit 0 ; exit 1
 
 ARG PHP_UPSTREAM_CONTAINER=php
 ARG PHP_UPSTREAM_PORT=9000
 
-COPY ./docker/nginx/project.conf /etc/nginx/sites-avialable/default.conf
-
-#CMD ["nginx", "-s", "reload"]
+COPY ./docker/nginx/project.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80 81 443

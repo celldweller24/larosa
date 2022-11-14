@@ -13194,7 +13194,7 @@ h1, .h1 {
     }
 }*/
 .left {
-  background: #007b75 url(/images/left_bg.jpg?7bb28693aa677ded1d12114c91b76a59) no-repeat right top;
+  background: #007b75 url("/storage/images/left_bg.jpg") no-repeat right top;
 }
 .left aside {
   justify-content: end;
@@ -13202,7 +13202,7 @@ h1, .h1 {
 .left aside .sidebar {
   height: auto;
   padding: 0 0 0 30px;
-  background: transparent url(/images/prechod.png?9c24e7695f83b6f8f6572f533c7c57f2) no-repeat -30px 0px;
+  background: transparent url("/storage/images/prechod.png") no-repeat -30px 0px;
 }
 .left aside .sidebar .logo {
   line-height: 1;
@@ -13228,6 +13228,7 @@ h1, .h1 {
 }
 .left aside .sidebar .sidebar-menu {
   padding: 0 30px 0 20px;
+  min-height: 330px;
 }
 .left aside .sidebar .sidebar-menu ul li {
   display: block;
@@ -13268,7 +13269,7 @@ h1, .h1 {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  background: #2dc5bd url(/images/phone.png?8d30c27f2c8d5bcb521c98ee4854b7af) no-repeat 12px 28px;
+  background: #2dc5bd url("/storage/images/phone.png") no-repeat 12px 28px;
 }
 .left aside .sidebar .contact-us span {
   display: block;
@@ -13311,26 +13312,26 @@ h1, .h1 {
   height: 35px;
 }
 .left aside .sidebar .masseuses-list ul li span.icon-female {
-  background: url(/images/ico-women.png?d8ffeddcbeab5ca3ba5858f81b5a9320) no-repeat 0px -4px;
+  background: url("/storage/images/ico-women.png") no-repeat 0px -4px;
 }
 .left aside .sidebar .masseuses-list ul li span.icon-male {
-  background: url(/images/ico-men.png?c3d42d2c2e449c2c677a2c1c4cd66842) no-repeat 0px -4px;
+  background: url("/storage/images/ico-men.png") no-repeat 0px -4px;
 }
 .left aside .sidebar .masseuses-list ul li span:hover.icon-female {
-  background: url(/images/ico-women.png?d8ffeddcbeab5ca3ba5858f81b5a9320) no-repeat 0px -51px;
+  background: url("/storage/images/ico-women.png") no-repeat 0px -51px;
 }
 .left aside .sidebar .masseuses-list ul li span:hover.icon-male {
-  background: url(/images/ico-men.png?c3d42d2c2e449c2c677a2c1c4cd66842) no-repeat 0px -51px;
+  background: url("/storage/images/ico-men.png") no-repeat 0px -51px;
 }
 .left aside .sidebar .masseuses-list ul li.active a {
   font-weight: 800;
   text-decoration: underline;
 }
 .left aside .sidebar .masseuses-list ul li.active span.icon-female {
-  background: url(/images/ico-women.png?d8ffeddcbeab5ca3ba5858f81b5a9320) no-repeat 0px -51px;
+  background: url("/storage/images/ico-women.png") no-repeat 0px -51px;
 }
 .left aside .sidebar .masseuses-list ul li.active span.icon-male {
-  background: url(/images/ico-men.png?c3d42d2c2e449c2c677a2c1c4cd66842) no-repeat 0px -51px;
+  background: url("/storage/images/ico-men.png") no-repeat 0px -51px;
 }
 .left aside .sidebar .menu-close-button {
   display: none;
@@ -13352,7 +13353,7 @@ h1, .h1 {
 }
 .right header {
   padding-top: 30px;
-  background: url(/images/header_bg-3.png?cd8c6cdb7711f9ecf7b18bee0656fcfc) no-repeat -115px 10px;
+  background: url("/storage/images/header_bg-3.png") no-repeat -115px 10px;
   height: 245px;
 }
 .right header .mobile-control-block {
@@ -13840,6 +13841,7 @@ h1, .h1 {
   }
   .left aside .sidebar nav.sidebar-menu {
     padding: 5px 10px 5px 0;
+    min-height: 330px;
   }
   .left aside .sidebar nav.sidebar-menu ul li {
     border-bottom: 1px solid #3c7773;
